@@ -154,7 +154,6 @@ body {
   z-index: 300;
   // margin-top: -10px;
   font-size: 1.35rem;
-  padding-bottom: 100px;
 }
 
 
@@ -343,10 +342,11 @@ body {
   .site-head-center {
     order: 1;
     position: static;
-    z-index: auto;
+    z-index: 10000;
     display: flex;
     justify-content: left;
     width: 186px;
+    padding-bottom: 100px;
   }
   .site-head-right {
     order: 3;
