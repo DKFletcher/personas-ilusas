@@ -212,7 +212,7 @@ body {
 .site-head-logo {
   flex-shrink: 0;
   display: block;
-  padding: 5px;
+  padding: 10px;
   color: $color-body-font;
   font-size: 3rem;
   line-height: 1em;
@@ -221,6 +221,7 @@ body {
   letter-spacing: 1px;
   overflow: hidden;
   text-overflow: ellipsis;
+  height: 40px
 }
 
 .site-head-logo:hover {
