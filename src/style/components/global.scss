@@ -273,10 +273,6 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -moz-font-feature-settings: "liga" on;
-    @include light-mode {
-      background: $color-bg-light;
-      color: $color-base-light;
-    }
 }
 
 ::selection {
@@ -293,9 +289,6 @@ hr {
     height: 1px;
     border: 0;
     border-top: 1px solid $color-border;
-    @include light-mode {
-      border: solid 1px $color-border-light;
-    }
 }
 
 audio,
@@ -346,9 +339,6 @@ a {
     color: $link-color;
     text-decoration: none;
     transition: 0.4s ease;
-    @include light-mode {
-    	color: $link-color-light;
-  }
 }
 
 a:hover {

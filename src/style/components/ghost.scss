@@ -25,9 +25,6 @@
     color: $color-body-font;
     text-align: center;
     opacity: 0.8;
-    @include light-mode {
-      color: $color-body-font-light;
-    }
 }
 
 .kg-width-wide {

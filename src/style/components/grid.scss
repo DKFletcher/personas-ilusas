@@ -96,9 +96,6 @@
   text-align: center;
   background: #1d1d1f;
   border: 1px inset #000;
-  @include light-mode {
-    background: #ccc;
-  }
 }
 
 @media (max-width: 800px) {
