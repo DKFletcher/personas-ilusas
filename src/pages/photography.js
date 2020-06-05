@@ -18,7 +18,7 @@ const BlogIndex = ({ data }, location) => {
     <Layout title={siteTitle}>
       <SEO
         title="Photography"
-        keywords={[`devlog`, `blog`, `gatsby`, `javascript`, `react`]}
+        keywords={[`Natasha Fletcher`, `visual`, `artist`, `personas ilusas`, `photography`, `installation`]}
       />
       {/* <Bio /> */}
       {data.site.siteMetadata.description && (

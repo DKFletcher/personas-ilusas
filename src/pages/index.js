@@ -15,7 +15,7 @@ const BlogIndex = ({ data }, location) => {
       <LayoutIndex title={siteTitle} path={location}>
         <SEO
           title="home"
-          keywords={[`devlog`, `blog`, `gatsby`, `javascript`, `react`]}
+          keywords={[`Natasha Fletcher`, `visual`, `artist`, `personas ilusas`, `photography`, `installation`]}
         />
         <h2 className={indexStyle.businessName}>N. S. Fletcher</h2>
         <h3 className={indexStyle.businessDescription}>Visual Artist</h3>

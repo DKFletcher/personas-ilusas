@@ -1,4 +1,4 @@
-import React from "react"
+ import React from "react"
 import { graphql, StaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
@@ -15,6 +15,7 @@ const ElementsPage = ({ data }, location) => {
     <Layout title={siteTitle}>
       <SEO
         title="Elements"
+        keywords={[`Natasha Fletcher`, `visual`, `artist`, `personas ilusas`, `photography`, `installation`]}
       />
 
       <article className="post-content page-template no-image">

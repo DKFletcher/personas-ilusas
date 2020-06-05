@@ -25,7 +25,7 @@ const IllustrationCarousel = ({ data }, location) => {
     <Layout title={siteTitle} path={location.path}>
       <SEO
         title="Installation"
-        keywords={[`devlog`, `blog`, `gatsby`, `javascript`, `react`]}
+        keywords={[`Natasha Fletcher`, `visual`, `artist`, `personas ilusas`, `photography`, `installation`]}
       />
       {/* <Bio /> */}
       {data.site.siteMetadata.description && (

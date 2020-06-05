@@ -15,6 +15,7 @@ class InstallationPostTemplate extends React.Component {
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
+          keywords={[`Natasha Fletcher`, `visual`, `artist`, `personas ilusas`, `photography`, `installation`]}
         />
         <article
           className={`post-content ${post.frontmatter.thumbnail || `no-image`}`}
