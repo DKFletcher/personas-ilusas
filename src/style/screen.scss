@@ -414,9 +414,13 @@ margin-left: 12rem;
   flex: 1 1 50%;
   display: flex;
   height: 35vw;
-  /* background: linear-gradient(135deg, #1f1f1f 0%, #111 100%) center center; */
+  //  background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
   /* based #1d1d1f */
   background: linear-gradient(135deg, #242426 0%, #161618 100%) center center;
+  // background: linear-gradient(
+  //   to right,
+  //   rgba(white, 0.9),
+  //   rgba(white, 0.3));
   background-size: cover;
   overflow: hidden;
   counter-increment: posts;
@@ -495,6 +499,10 @@ margin-left: 12rem;
   font-size: 3.4rem;
   /* max-width: 70%; */
   text-align: center;
+  background: linear-gradient(
+    to right,
+    rgba(255,255,255,0.1),
+    rgba(255,255,255,0.4));
   transition: all 0.3s cubic-bezier(0.33, 0, 0.2, 1);
 }
 
