@@ -2219,7 +2219,7 @@ body {
   counter-increment: posts;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .post-card {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 100%;
@@ -2291,7 +2291,7 @@ body {
   opacity: 0;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .post-card.with-image .post-card-content {
     opacity: 1;
   }
@@ -2373,7 +2373,7 @@ body {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .post-card.no-image:before {
     font-size: 50vw;
   }
@@ -2711,7 +2711,7 @@ body {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .tag-item {
     font-size: 2rem;
     margin: 1.4vw;
