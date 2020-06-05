@@ -23,22 +23,25 @@ const LayoutIndex = props => {
             >
               <div className="hamburger-box">
                 <div className="hamburger-inner" />
-              </div> <div className="hamburger-text-menu-text hidden">Menu</div>
+              </div>{" "}
+              <div className="hamburger-text-menu-text hidden">Menu</div>
             </div>
           </a>
           <nav id="swup" className="site-head-left">
             <ul className="nav" role="menu">
-              {/* <li className="nav-home nav-current" role="menuitem">
-                <Link to={`/`}>Home</Link>
-              </li> */}
-              <li className="nav-about" role="menuitem">
-                <Link to={`/about`}>About</Link>
-              </li>
+              <Link to={`/about`}>
+                <li className="nav-about" role="menuitem">
+                  About
+                </li>
+              </Link>
               <li className="nav-elements" role="menuitem">
                 <Link to={`/photography`}>Photography</Link>
               </li>
               <li className="nav-tags" role="menuitem">
                 <Link to={`/installation`}>Installation</Link>
+              </li>
+              <li className="nav-contact" role="menuitem">
+                <Link to={`/contact`}>Contact</Link>
               </li>
             </ul>
           </nav>
@@ -58,5 +61,4 @@ const LayoutIndex = props => {
     </div>
   )
 }
-
 export default LayoutIndex
