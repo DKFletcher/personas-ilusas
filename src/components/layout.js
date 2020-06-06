@@ -29,19 +29,40 @@ const Layout = props => {
           </a>
           <nav id="swup" className="site-head-left">
             <ul className="nav" role="menu">
-              <Link to={`/about`}>
-                <li className="nav-about" role="menuitem">
+              <li role="menuitem">
+                <Link className="navItem" activeClassName="activeNavItem" to={`/about`}>
                   About
-                </li>
-              </Link>
-              <li className="nav-elements" role="menuitem">
-                <Link to={`/photography`}>Photography</Link>
+                </Link>
               </li>
-              <li className="nav-tags" role="menuitem">
-                <Link to={`/installation`}>Installation</Link>
+
+              <li role="menuitem">
+                <Link
+                  className="navItem"
+                  activeClassName="activeNavItem"
+                  to={`/photography`}
+                >
+                  Photography
+                </Link>
               </li>
-              <li className="nav-contact" role="menuitem">
-                <Link to={`/contact`}>Contact</Link>
+
+              <li role="menuitem">
+                <Link
+                  className="navItem"
+                  activeClassName="activeNavItem"
+                  to={`/installation`}
+                >
+                  Installation
+                </Link>
+              </li>
+
+              <li role="menuitem">
+                <Link
+                  className="navItem"
+                  activeClassName="activeNavItem"
+                  to={`/contact`}
+                >
+                  Contact
+                </Link>
               </li>
             </ul>
           </nav>
@@ -57,7 +78,7 @@ const Layout = props => {
           {children}
         </div>
       </main>
-      {isIndex ? <Footer isIndex={true}/> : <Footer noFoot={noFoot}/>}
+      {isIndex ? <Footer isIndex={true} /> : <Footer noFoot={noFoot} />}
     </div>
   )
 }

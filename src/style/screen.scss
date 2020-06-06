@@ -29,7 +29,6 @@ body {
   background: $color-bg;
   transition: background 0.3s ease-out;
   transition-delay: 0.25;
-
 }
 
 .img {
@@ -101,7 +100,6 @@ body {
   margin: 0;
   font-size: 4.2rem;
   color: $color-body-font;
-
 }
 @media (max-width: 500px) {
   .page-head-title {
@@ -143,7 +141,6 @@ body {
 //   font-size: 1.35rem;
 // }
 
-
 .site-head {
   background: rgba(248, 248, 248, 1);
   position: fixed;
@@ -155,7 +152,6 @@ body {
   // margin-top: -10px;
   font-size: 1.35rem;
 }
-
 
 .site-head-container {
   display: flex;
@@ -173,14 +169,18 @@ body {
   margin-left: 10px;
   white-space: nowrap;
 }
-
 .nav {
   display: flex;
   margin: 0 0 0 -12px;
   padding: 0;
   list-style: none;
 }
-
+.navItem {
+  font-size: medium;
+}
+.activeNavItem {
+  font-size: x-large;
+}
 .site-head li {
   display: block;
   margin: 0;
@@ -197,7 +197,6 @@ body {
   opacity: 0.6;
 }
 
-.nav-current a,
 .site-head a:hover {
   text-decoration: none;
   opacity: 1;
@@ -208,7 +207,6 @@ body {
   display: flex;
   justify-content: center;
   // width: 100%;
-  
 }
 
 .site-head-logo {
@@ -224,7 +222,7 @@ body {
   letter-spacing: 1px;
   overflow: hidden;
   text-overflow: ellipsis;
-  height: 40px
+  height: 40px;
 }
 
 .site-head-logo:hover {
@@ -351,7 +349,7 @@ body {
     display: flex;
     justify-content: left;
     width: 186px;
-    padding-top: 5px;;
+    padding-top: 5px;
   }
   .site-head-right {
     order: 3;
@@ -378,7 +376,7 @@ body {
 
   .site-head-open .site-head-left,
   .site-head-open .site-head-right {
-margin-left: 12rem;
+    margin-left: 12rem;
   }
   .site-head-open .site-head-left,
   .site-head-open .site-head-right {
@@ -506,8 +504,9 @@ margin-left: 12rem;
   text-align: center;
   background: linear-gradient(
     to right,
-    rgba(255,255,255,0.1),
-    rgba(255,255,255,0.4));
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.4)
+  );
   transition: all 0.3s cubic-bezier(0.33, 0, 0.2, 1);
 }
 
@@ -846,7 +845,7 @@ margin-left: 12rem;
   text-align: center;
 }
 
-.page-contact{
+.page-contact {
   height: 75vh;
   display: flex;
   align-items: center;
