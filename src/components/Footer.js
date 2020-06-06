@@ -10,7 +10,7 @@ const Footer = props => {
     query {
       site {
         siteMetadata {
-          title
+          business
         }
       }
     }
@@ -20,7 +20,7 @@ const Footer = props => {
       {console.log('isIndex: ', props.isIndex)}
       {props.noFoot ? null : (
         <div>
-          &copy; {indexQuery.site.siteMetadata.title} {new Date().getFullYear()}
+          &copy; {indexQuery.site.siteMetadata.business} {new Date().getFullYear()}
         </div>
       )}
     </footer>
