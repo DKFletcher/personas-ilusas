@@ -20,7 +20,7 @@ const AboutPage = ({ data }, location) => {
         keywords={[`Natasha Fletcher`, `visual`, `artist`, `personas ilusas`, `photography`, `installation`]}
       />
 
-      <article className="post-content page-template no-image">
+      <article className="page-contact">
         <div className="post-content-body">
           <h2 id="dynamic-styles">NSFVisualArts@gmail.com</h2>
         </div>
