@@ -2,7 +2,6 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Footer from "../components/Footer"
-import IndexFooter from "../components/indexFooter"
 
 const Layout = props => {
   const { title, isIndex, noFoot, children } = props
@@ -58,8 +57,7 @@ const Layout = props => {
           {children}
         </div>
       </main>
-      {isIndex ? <IndexFooter/> : <Footer noFoot={noFoot}/>}
-      {/* <Footer /> */}
+      {isIndex ? <Footer isIndex={true}/> : <Footer noFoot={noFoot}/>}
     </div>
   )
 }
