@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql, StaticQuery } from "gatsby";
 
-import LayoutIndex from "../components/layoutIndex";
+import Layout from "../components/layout";
 import SEO from "../components/seo";
 import BackgroundImage from "gatsby-background-image";
 
@@ -12,7 +12,11 @@ const BlogIndex = ({ data }, location) => {
   const siteTitle = data.site.siteMetadata.title;
   return (
     <BackgroundImage fluid={data.indexImage.childImageSharp.fluid}>
-      <LayoutIndex title={siteTitle} path={location}>
+      <Layout 
+      title={siteTitle} 
+      path={location}
+      isIndex={true}
+      >
         <SEO
           title="home"
           keywords={[`Natasha Fletcher`, `visual`, `artist`, `personas ilusas`, `photography`, `installation`]}
@@ -20,7 +24,7 @@ const BlogIndex = ({ data }, location) => {
         <h2 className={indexStyle.businessName}>N. S. Fletcher</h2>
         <h3 className={indexStyle.businessDescription}>Visual Artist</h3>
         <h4 className={indexStyle.businessActivity}>Installation / Photography / Environmental Art</h4>
-      </LayoutIndex>
+      </Layout>
     </BackgroundImage>
   );
 };

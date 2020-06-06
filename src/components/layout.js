@@ -2,9 +2,10 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Footer from "../components/Footer"
+import IndexFooter from "../components/indexFooter"
 
 const Layout = props => {
-  const { title, children } = props
+  const { title, isIndex, noFoot, children } = props
   const [toggleNav, setToggleNav] = React.useState(false)
   return (
     <div className={`site-wrapper ${toggleNav ? `site-head-open` : ``}`}>
@@ -57,7 +58,8 @@ const Layout = props => {
           {children}
         </div>
       </main>
-      <Footer />
+      {isIndex ? <IndexFooter/> : <Footer noFoot={noFoot}/>}
+      {/* <Footer /> */}
     </div>
   )
 }

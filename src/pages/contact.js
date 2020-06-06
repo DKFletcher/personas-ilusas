@@ -1,6 +1,5 @@
 import React from "react"
 import { graphql, StaticQuery } from "gatsby"
-import Img from "gatsby-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -12,7 +11,11 @@ const AboutPage = ({ data }, location) => {
   const siteTitle = data.site.siteMetadata.title
 
   return (
-    <Layout title={siteTitle}>
+    <Layout 
+    title={siteTitle}
+    isIndex={false}
+    noFoot={true}
+    >
       <SEO title="About" 
         keywords={[`Natasha Fletcher`, `visual`, `artist`, `personas ilusas`, `photography`, `installation`]}
       />
@@ -23,7 +26,7 @@ const AboutPage = ({ data }, location) => {
         </div>
       </article>
       <footer className="post-content-footer"></footer>
-    </Layout>
+    </Layout >
   )
 }
 
