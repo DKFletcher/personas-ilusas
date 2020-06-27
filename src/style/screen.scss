@@ -374,6 +374,10 @@ body {
     transition: height 0.2s ease-in;
   }
 
+  .site-head-open .activeNavItem {
+    color: red;
+  }
+
   .site-head-open .site-head-left,
   .site-head-open .site-head-right {
     margin-left: 12rem;
