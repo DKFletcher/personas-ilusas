@@ -1,9 +1,7 @@
 import React from "react"
 
 import { graphql, useStaticQuery } from "gatsby"
-import indexModule from '../components/index.module.css'
-
-
+import indexModule from "../components/index.module.css"
 
 const Footer = props => {
   const indexQuery = useStaticQuery(graphql`
@@ -17,10 +15,10 @@ const Footer = props => {
   `)
   return (
     <footer className={props.isIndex ? indexModule.siteFoot : `site-foot`}>
-      {console.log('isIndex: ', props.isIndex)}
       {props.noFoot ? null : (
         <div>
-          &copy; {indexQuery.site.siteMetadata.business} {new Date().getFullYear()}
+          &copy; {indexQuery.site.siteMetadata.business}{" "}
+          {new Date().getFullYear()}
         </div>
       )}
     </footer>
